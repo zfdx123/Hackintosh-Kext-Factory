@@ -326,6 +326,7 @@ steps:
 - task: GitHubRelease@0
   displayName: 'Publish GitHub Release'
   inputs:
+   gitHubConnection: github.com_zfdx
     repositoryName: zfdx123/Hackintosh-Kext-Factory
     action: edit
     target: '$(Build.SourceVersion)'
